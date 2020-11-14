@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Amazon Clone in Mern Stack">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Made By Shivang Saxena">
+    <!-- Favicon -->
+    <link rel="icon" href="img/amazon_favicon.ico" sizes="16x16" type="image/gif">
+
+    <!-- Font awesome css cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="css/custom.css">
+
+    <title>Amazon:Navbar</title>
+</head>
+
+<body>
+
+    <!-- Navigation Bar Start -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <button class="btn btn-outline-light">
+            <i class="fas fa-sliders-h"></i>
+        </button>
+        <a class="navbar-brand pl-2" href="#">
+            <img src="img/amazon_logo_white.png" alt="amazon logo" height="30" width="100">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- Search bar start -->
+            <form class="form-inline px-lg-5" novalidate method="GET">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="btnCategoryDropdownmenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" name="btncategory">
+                              All
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="btnCategoryDropdownmenu">
+                              <a class="dropdown-item" href="#">Fashion</a>
+                              <a class="dropdown-item" href="#">Smart Phone</a>
+                              <a class="dropdown-item" href="#">Book</a>
+                              <a class="dropdown-item" href="#">Hardware</a>
+                              <a class="dropdown-item" href="#">Software</a>
+                            </div>
+                          </div>
+                    </div>
+                    <input type="text" class="form-control" size="50" name="query" id="query">
+                    <input type="text" name="category" id="category" value="book" hidden>
+                    <div class="input-group-append">
+                        <button type="submit" class="btn btn-warning">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+            <!-- Search bar end -->
+          <ul class="navbar-nav">
+              <!-- prefer lanaguage start -->
+            <li class="nav-item dropdown px-2">
+                <a class="nav-link" href="#" id="preferLanguageDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-2x fa-language"></i>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="preferLanguageDropdown">
+                  <form class="p-3">
+                    <div class="dropdown-divider"></div>
+                    <div class="custom-control custom-radio mb-2">
+                        <input class="custom-control-input" type="radio" name="prefLang" id="englishlang" value="English" checked>
+                        <label class="custom-control-label" for="englishlang">
+                          <img src="img/Flag/english.jpg" alt="english logo" width="30" height="30">
+                        </label>
+                    </div>
+                    <div class="dropdown-divider"></div>
+                    <div class="custom-control custom-radio mb-2">
+                        <input class="custom-control-input" type="radio" name="prefLang" id="hindilang" value="Hindi" checked>
+                        <label class="custom-control-label" for="hindilang">
+                            <img src="img/Flag/india.png" alt="english logo" width="30" height="30">
+                        </label>
+                    </div>
+                    <div class="dropdown-divider"></div>
+                    <div class="custom-control custom-radio mb-2">
+                        <input class="custom-control-input" type="radio" name="prefLang" id="urdulang" value="Urdu" checked>
+                        <label class="custom-control-label" for="urdulang">
+                            <img src="img/Flag/pakistan.jpg" alt="english logo" width="30" height="30">
+                        </label>
+                    </div>
+                    <div class="dropdown-divider"></div>
+                    <div class="custom-control custom-radio">
+                        <input class="custom-control-input" type="radio" name="prefLang" id="banglalang" value="Bangla" checked>
+                        <label class="custom-control-label" for="banglalang">
+                            <img src="img/Flag/bangla.jfif" alt="english logo" width="30" height="30">
+                        </label>
+                    </div>
+                    <div class="dropdown-divider"></div>
+                  </form>
+                </div>
+              </li>
+              <!-- prefer lanaguage end -->
+
+              <!-- user account start -->
+              <li class="nav-item dropdown px-2">
+                <a class="nav-link" href="#" id="useraccount" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-2x fa-user-circle"></i>
+                </a>
+                <div class="dropdown-menu px-3" aria-labelledby="useraccount">
+                    <div class="d-flex flex-column justify-content-center">
+                        <a class="btn btn-warning w-75 btn-sm font-weight-bold" href="#">Signin</a>
+                        <small class="text-muted">New Customer? <a href="#">Start here.</a> </small>
+                    </div>
+                </div>
+              </li>
+              <!-- user account ends -->
+
+              <!-- shopping cart start -->
+              <li class="nav-item px-2">
+                  <a href="" class="nav-link" aria-labelledby="true">
+                      <i class="fas fa-2x text-light fa-shopping-cart"></i>
+                      <span class="badge badge-warning badge-pill">10</span>
+                  </a>
+              </li>
+              <!-- shopping cart end -->
+          </ul>
+          
+        </div>
+      </nav>
+    <!-- Navigation Bar End -->
+    <!-- Optional JavaScript; choose one of the two! -->
+    <script src="js/all.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/proper.min.js"></script>
+    <!-- Custom Javascript -->
+    <script src="js/custom.js"></script>
+</body>
+</html>
