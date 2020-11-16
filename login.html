@@ -16,6 +16,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Drawer Css File -->
+    <link rel="stylesheet" href="css/bootstrap-drawer.min.css">
     <!-- Custom Css -->
     <link rel="stylesheet" href="css/custom.css">
 
@@ -26,9 +28,34 @@
 
     <!-- Navigation Bar Start -->
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-        <button class="btn btn-outline-light">
-            <i class="fas fa-sliders-h"></i>
-        </button>
+        <!-- drawer start -->
+        <button class="btn btn-outline-light" data-toggle="drawer" data-target="#amazonDrawer">
+          <i class="fas fa-sliders-h"></i>
+      </button>
+
+      <div class="drawer drawer-left slide" tabindex="-1" role="dialog" aria-labelledby="drawer-demo-title"
+          aria-hidden="true" id="amazonDrawer">
+          <div class="drawer-content drawer-content-scrollable" role="document">
+              <div class="drawer-header bg-dark text-white">
+                  <h4 class="drawer-title mx-auto" id="drawer-demo-title">
+                      <i class="fas fa-user-circle"></i>
+                      Hello, Sign In
+                  </h4>
+              </div>
+              <div class="drawer-body">
+                  <h6 class="text-muted text-uppercase">Help & Settings</h6>
+                  <a href="your_account.html" class="btn btn-outline-success my-2 btn-sm">You Account</a>
+                  <a href="login.html" class="btn btn-warning my-2  btn-sm">Sign in</a>
+              </div>
+              <div class="drawer-footer">
+                  <button type="button" class="btn btn-outline-danger btn-sm" data-dismiss="drawer"
+                      aria-label="Close">
+                      <i class="fas fa-2x fa-times"></i>
+                  </button>
+              </div>
+          </div>
+      </div>
+      <!-- Drawer Ends -->
         <a class="navbar-brand pl-2" href="#">
             <img src="img/amazon_logo_white.png" alt="amazon logo" height="30" width="100">
         </a>
@@ -173,6 +200,8 @@
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/proper.min.js"></script>
+    <!-- drawer js file -->
+    <script src="js/bootstrap-drawer.min.js"></script>
     <!-- Custom Javascript -->
     <script src="js/custom.js"></script>
 </body>
